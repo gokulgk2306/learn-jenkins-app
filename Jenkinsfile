@@ -7,6 +7,7 @@ pipeline {
                 sh 'echo "Hello from Jenkins"'
                 sh "whoami"
                 sh "pwd"
+                sh "Done from Git"
             }
         }
     }
