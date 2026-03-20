@@ -24,6 +24,12 @@ pipeline {
             steps {
             sh '''
             echo "Test Stage"
+            if [ -f "/workspaces/learn-jenkins-app/public/index/html" ]; then
+                echo "File exists"
+            else
+                echo "File not found"
+            fi
+            npm test
             '''
         }
         }
